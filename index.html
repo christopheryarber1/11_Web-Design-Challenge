@@ -1,1 +1,97 @@
-<html><head></head><body>print("Hello World!")</body></html>
+<html>
+    <head>
+        <title>Index</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    </head>
+    <body>
+        <nav id="NavigationList>"
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              </li>
+              <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                </li>
+            <li class="nav-item">
+                <nav id="SmallScreenNav>"
+                    <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                      Plots
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="Visualization1.html">Latitude vs Temperature</a>
+                      <a class="dropdown-item" href="Visualization2.html">Latitude vs Humidity</a>
+                      <a class="dropdown-item" href="Visualization3.html">Latitude vs Cloudiness</a>
+                      <a class="dropdown-item" href="Visualization4.html">Latitude vs Wind Speed</a>
+                    </div>
+                    </div>
+                </nav>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Data.html">Data</a>
+              </li>
+        </ul>
+        </nav>
+        </br>
+        </br>
+                <div class="container">
+                  <div class="row">
+                      <div class="col-md-8"><h1>Open Weather Analysis: Latitude</h1>
+                      </div>
+                      <div class="col-md-4">
+                      </div>
+                  </div>
+              </div>
+        </br>
+        </br>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+                          This site visualizes analysis from Homework 6: Python APIs. The dataset was pulled from the OpenWeather API for a randomized list of over 500 cities worldwide, and then plotted and analyzed. The homework called for analysis of latitude versus a number of attributes brought back in the API responses.  See the below visualizations to learn more.
+                      </div>
+                  </div>
+              </div>
+          </br>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-8">
+                          The Openweather API is able to take a combination of latitude and longitude data, and provide back a response for the weather in that given area. The API has the ability to return data in both XML and JSON formats, and also has the ability to provide resulting datasets with varying units of measurement (standard, metric, imperial). Once the API is called, a response is generated which includes meterological conditions at the date/time of the request. If data is available for the given latitude/longitude combo, specific attributes of the response data are saved back into lists which are then merged into a Pandas Dataframe. If no data is available for a given latitude/longitude combo, the response is skipped.  Once the full list of data was aggregated, then individual plots were generated based on instructions provided in the homework requirements.  
+                      </div>
+                      <div class="col-md-4">
+                        <img src="/Assets/OpenWeatherAPI.png" alt="OpenWeather API Documentation" width="300" height="250">
+                      </div>
+                  </div>
+              </div>
+          </br>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-6">
+                        <img src="/Assets/JsonResponseExample.png" alt="JSON Response" width="300" height="250">
+                      </div>
+                      <div class="col-md-6">
+                        <img src="/Assets/WeatherResultDataFrame.png" alt="Dataframe" width="500" height="250">
+                      </div>
+                  </div>
+              </div>
+          </br>
+        <footer>
+            <p><a href="index.html">Return to Home Page</a></p>
+            <p>&copy; 2022, Flique Design!</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
